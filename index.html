@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красивая Жизнь | Премиум Салон</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <header class="navbar">
+        <div class="container nav-box">
+            <a href="#" class="logo">КРАСИВАЯ <span>жизнь</span></a>
+            <nav class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#team">Мастера</a>
+                <a href="#booking" class="btn btn-outline">Запись</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span>Салон красоты & подологии люкс класса</span>
+            <h1>Искусство быть <br><span class="gold-text">превосходной</span></h1>
+            <p>Премиальный уход в 4 и 6 рук, эстетическая колористика Tefia/Shot и сложная подология.</p>
+            <div class="hero-cta">
+                <a href="#booking" class="btn btn-gold">Записаться</a>
+                <a href="#services" class="btn btn-secondary">Услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Экспресс-Запись -->
+    <section id="booking" class="booking-section">
+        <div class="container booking-wrapper">
+            <div class="booking-info">
+                <h2>Эксклюзивный визит</h2>
+                <p>Оставьте номер телефона. Виктория свяжется с вами для подбора времени.</p>
+                <div class="early-badge">✦ Ранний выезд до 08:00 (+1000₽)</div>
+            </div>
+            <form class="booking-form" id="fastBookingForm">
+                <input type="tel" id="clientPhone" placeholder="+7 (999) 000-00-00" required>
+                <button type="submit" class="btn btn-gold">Забронировать</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Направления ухода</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Волосы & Колористика</h3>
+                    <ul>
+                        <li>Сложные техники <span>Airtouch / Шатуш / Мелирование</span></li>
+                        <li>Окрашивание в 1 тон <span>Короткие / Средние / Длинные (Tefia, Shot)</span></li>
+                        <li>Стрижки & Уход <span>Каре под утюжок, Криореконструкция, Ботокс</span></li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Ногтевой сервис & Подология</h3>
+                    <ul>
+                        <li>Эстетика <span>Японский маникюр, SMART-педикюр всей стопы</span></li>
+                        <li>Подология <span>Патологический педикюр 1 и 2 сложности, Титановая нить</span></li>
+                        <li>Лечение <span>Удаление вросшего ногтя, трещины, микозы</span></li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Взгляд, Макияж & Тело</h3>
+                    <ul>
+                        <li>Ресницы & Брови <span>Наращивание 1D-4D, Ламинирование, Архитектура Shik</span></li>
+                        <li>Макияж & Образ <span>Свадебный образ, Голливудская волна</span></li>
+                        <li>Массаж & Аппарат <span>Кобидо, Лимфодренаж, Вакуумно-роликовый аппарат</span></li>
+                    </ul>
+                </div>
+                <div class="service-card VIP-card">
+                    <h3>Men's Zone & Депиляция</h3>
+                    <ul>
+                        <li>Для мужчин <span>Стрижки, Мужской маникюр, Оформление бровей</span></li>
+                        <li>Депиляция <span>Premium Гелинг, Шугаринг/Воск (Комплексы 2, 3, 6, 7)</span></li>
+                        <li>Солярий <span>Турбосолярий (поминутная оплата + стикини)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Команда -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <h2 class="section-title">Топ-специалисты</h2>
+            <div class="team-grid">
+                <div class="team-item"><h4>Татьяна</h4><p>Руководитель, VIP-подолог</p></div>
+                <div class="team-item"><h4>Виктория</h4><p>Главный администратор, Брови/Ресницы</p></div>
+                <div class="team-item"><h4>Екатерина & Мила</h4><p>Топ-мастера маникюра и педикюра</p></div>
+                <div class="team-item"><h4>Анастасия & Татьяна</h4><p>Стилисты, эксперты колористики</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Салон «КРАСИВАЯ ЖИЗНЬ». Материалы рассчитываются отдельно.</p>
+    </footer>
+
+    <!-- Ассистент -->
+    <div class="assistant-widget" id="assistantWidget">
+        <div class="assistant-badge" id="assistantBadge">✨ Подбор ухода</div>
+        <div class="assistant-chat" id="assistantChat">
+            <div class="chat-header">
+                <h4>Интеллектуальный ассистент</h4>
+                <button id="chatClose">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
